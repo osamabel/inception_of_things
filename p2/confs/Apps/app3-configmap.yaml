@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app3-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Hello Kubernetes!</title>
+      <link rel="stylesheet" type="text/css" href="/css/main.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300">
+    </head>
+    <body>
+      <div class="main">
+        <img src="/images/kubernetes.png"/>
+        <div class="content">
+          <div id="message">
+            Hello from app3.
+          </div>
+        </div>
+        <div id="info">
+          <table>
+            <tr>
+              <th>pod:</th>
+              <td id="pod"></td>
+            </tr>
+            <tr>
+              <th>node:</th>
+              <td id="node"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </body>
+    </html>

@@ -1,0 +1,19 @@
+Vagrant.configure("2") do | config |
+
+  config.vm.box = "bento/debian-11"
+  config.vm.synced_folder "./confs", "/vagrant/confs", create: true
+
+  config.vm.define 'obelkhadS' do |server|
+    server.vm.hostname = 'obelkhadS'
+    server.vm.network 'private_network', ip: '192.168.56.110'
+   
+    # VirtualBox provider settings
+    server.vm.provider 'virtualbox' do |vb|
+      vb.cpus = 1
+      vb.memory = 1024
+
+    end
+    server.vm.provision "shell", path: "scripts/init.sh"
+  end
+
+end

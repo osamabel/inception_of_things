@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant/confs":{"create":true,"guestpath":"/vagrant/confs","hostpath":"/goinfre/obelkhad/inception_of_things/p2/confs","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/goinfre/obelkhad/inception_of_things/p2","disabled":false,"__vagrantfile":true}}}
