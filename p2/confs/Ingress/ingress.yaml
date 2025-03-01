@@ -26,23 +26,12 @@ spec:
             name: app-two
             port:
               number: 80
-  - host: app3.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: app-three
-            port:
-              number: 80
-  # Default backend for requests without a matching host
   - http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: app-one
+            name: app-three
             port:
               number: 80

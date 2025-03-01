@@ -40,7 +40,7 @@ if [ $? -eq 0 ]; then
   echo -e "\e[32m➜ Kubeconfig is available at /etc/rancher/k3s/k3s.yaml\e[0m\n"
 else
   echo -e "\n\e[1;31m❌ K3s installation failed!\e[0m"
-  echo -e "\e[31m➜ Please check the error messages above\e[0m\n"
+  echo -e "\e[31m➜ Please check the errovr messages above\e[0m\n"
   exit 1
 fi
 

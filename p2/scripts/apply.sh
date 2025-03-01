@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d "/home/vagrant/confs" ]; then
+if [ -d "/home/vagrant/confs" ]; then
     echo -e "\n\e[1;32m┌─────────────────────────────────────────────────┐\e[0m"
     echo -e "\e[1;32m│ Using local copy of configuration files...        │\e[0m"
     echo -e "\e[1;32m└─────────────────────────────────────────────────┘\e[0m\n"
