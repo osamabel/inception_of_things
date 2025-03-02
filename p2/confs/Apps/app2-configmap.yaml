@@ -9,18 +9,6 @@ data:
     <head>
       <title>Hello Kubernetes!</title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300">
-      To embed the CSS directly in the HTML using a style tag, you can modify your ConfigMap like this:
-yamlCopyapiVersion: v1
-kind: ConfigMap
-metadata:
-  name: app3-resources
-data:
-  index.html: |
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Hello Kubernetes!</title>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300">
       <style>
         body {
           font-family: 'Ubuntu', sans-serif;
